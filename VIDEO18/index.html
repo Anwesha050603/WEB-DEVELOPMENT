@@ -1,0 +1,45 @@
+<!--border,margin,padding-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aquamarine;
+        }
+        .box1{
+            color: yellowgreen;
+            padding:10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box; /*content+padding+border hai 200px,border box makes sure */
+        }
+        .box2
+        {
+            color: brown;
+            padding: 10px;
+            margin: 20px;
+            border:2px solid black ;
+            height: 200px;
+            box-sizing: border-box;
+            /*margin collapse horaa hai box1 and box2 ka,in that case jiss box ka margin value zyada hoga,usika ka margin ek baar consider hoga*/ 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+    <div>
+        <img src="margincollapse.png" alt="diagram">
+    </div>
+    
+</body>
+</html>
