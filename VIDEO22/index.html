@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            /*by default 16px hota hai*/
+            font-size: 12px;
+
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /*width: 2047px;*/
+            width: 80vw;
+            /*viewport width,jitna full screen ka hoga in any device*/
+            margin: auto;
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /*width: 2047px;*/
+            width: 80vw;
+            /*v imp to use*/
+            min-height: 80vh;
+            /*height: 80vh;*/
+            /*v imp to use*/
+            /*viewport width,jitna full screen ka hoga in any device*/
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+
+        }
+        .container p{
+            font-size: 2rem;
+            
+        }
+
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin:23px auto;
+            color: black;
+            font-size: 22px;
+            /*width: 100vmin; /*vmin is height for PC, so vmin= vh for PC */
+            width: 80vw;
+
+            }
+        
+    </style>
+    <!--<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units">link</a>-->
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio est cum? Atque ut voluptates
+            labore
+            voluptatum quisquam neque, distinctio deserunt explicabo ad, fuga illum ab cum molestiae, quidem ex
+            blanditiis
+            quasi esse dolore reiciendis! Similique minima illum provident earum optio tenetur asperiores! Autem
+            consequatur
+            illo nam sint culpa quia quidem inventore tempore esse porro? Libero!
+        </p>
+
+    </div>
+    <div class="mycont">
+
+        I am another container.
+    </div>
+</body>
+
+</html>
